@@ -17,16 +17,21 @@ int main()
     //Ask the User : Print a message asking for the text.Use the special "getline" command so spaces don't break your program.
 	cout << "Enter a message to shift: "; 
     cin >> shiftMessage;
-    cout << "Enter a shift number";
+    cout << "Enter a shift number: ";
     cin >> shiftBy;
 	for (int i = 0; i < shiftMessage.length(); i++) { 
         char c = shiftMessage[i];
-        if () { 
-           
+        if ( c == ' ' or  c == '!') {
+            continue;
+        }
+        else {
+
+			c = c + shiftBy; 
+            shiftMessage[i] = c;
+        }
     } 
     cout << "Shifted message: " << shiftMessage << endl;
     }
-}
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
