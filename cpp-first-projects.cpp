@@ -28,6 +28,10 @@ int main()
 
 			c = c + shiftBy; 
             shiftMessage[i] = c;
+            if (c  > 122) {
+				 c = c - 26;
+            }
+            shiftMessage[i] = c;
         }
     } 
     cout << "Shifted message: " << shiftMessage << endl;
