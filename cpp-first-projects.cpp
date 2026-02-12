@@ -2,12 +2,30 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
     std::cout << "Hello Wor ld!\n";
     std::cout << "I meant Hello World!\n";
 	std::cout << "I am learning C++.\n";
+    //learning inputs
+    //Variable Setup : You'll need one variable to hold the message (a string) and another to hold the shift amount (a whole number).
+    //  Int variable and a variable  to hold your string
+    int shiftBy;
+    string shiftMessage;
+    //Ask the User : Print a message asking for the text.Use the special "getline" command so spaces don't break your program.
+	cout << "Enter a message to shift: "; 
+    cin >> shiftMessage;
+    cout << "Enter a shift number";
+    cin >> shiftBy;
+	for (int i = 0; i < shiftMessage.length(); i++) { 
+        char c = shiftMessage[i];
+        if () { 
+           
+    } 
+    cout << "Shifted message: " << shiftMessage << endl;
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
